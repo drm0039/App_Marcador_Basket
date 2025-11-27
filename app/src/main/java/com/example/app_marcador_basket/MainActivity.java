@@ -29,14 +29,16 @@ public class MainActivity extends AppCompatActivity {
         binding.btnLocalPlus2.setOnClickListener(v -> addPointsLocal(2));
         binding.btnLocalMinus1.setOnClickListener(v -> subtractPointLocal());
 
-        // Visitor
+        // Visitante
         binding.btnVisitorPlus1.setOnClickListener(v -> addPointsVisitor(1));
         binding.btnVisitorPlus2.setOnClickListener(v -> addPointsVisitor(2));
         binding.btnVisitorMinus1.setOnClickListener(v -> subtractPointVisitor());
 
-        // Buttons
         binding.btnReset.setOnClickListener(v -> resetScores());
+
         binding.btnResults.setOnClickListener(v -> goToResults());
+        
+        binding.btnTerminar.setOnClickListener(v -> goToResults());
     }
 
     private void addPointsLocal(int points) {

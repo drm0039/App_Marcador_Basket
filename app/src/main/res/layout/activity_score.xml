@@ -6,21 +6,22 @@
     android:gravity="center"
     android:padding="32dp">
 
+    <!-- Marcador -->
     <TextView
-        android:id="@+id/tvScoreLocal"
+        android:id="@+id/tvScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Local:"
-        android:textSize="32sp"
+        android:text="0 - 0"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
+    <!-- Frase resultado -->
     <TextView
-        android:id="@+id/tvScoreVisitor"
+        android:id="@+id/tvResultMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Visitante:"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="20dp"
+        android:text="Resultado"
+        android:textSize="22sp" />
 
 </LinearLayout>
