@@ -170,4 +170,4 @@ private void goToResults() {
 
 * Daniel Rivera Miranda
 * Contacto: drm0039@alu.medac.es
-* GitHub: 
+* GitHub: https://github.com/drm0039
