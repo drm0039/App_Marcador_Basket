@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnReset.setOnClickListener(v -> resetScores());
 
         binding.btnResults.setOnClickListener(v -> goToResults());
-        
-        binding.btnTerminar.setOnClickListener(v -> goToResults());
+
     }
 
     private void addPointsLocal(int points) {
