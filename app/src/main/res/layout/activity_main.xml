@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvLocalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_local"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"/>
+
+        <Button
+            android:id="@+id/btnLocalMinus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalLabel"
+            app:layout_constraintStart_toStartOf="@id/tvLocalLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvLocalLabel"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvLocalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="64sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/btnLocalMinus1"
+            app:layout_constraintStart_toStartOf="@id/tvLocalLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvLocalLabel"/>
+
+        <Button
+            android:id="@+id/btnLocalPlus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalScore"
+            app:layout_constraintStart_toStartOf="@id/tvLocalLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvLocalLabel"/>
+
+        <Button
+            android:id="@+id/btnLocalPlus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_two"
+            app:layout_constraintTop_toBottomOf="@id/btnLocalPlus1"
+            app:layout_constraintStart_toStartOf="@id/tvLocalLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvLocalLabel"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/imgBall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pelota_basket"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="@string/reset_desc"
+            app:layout_constraintEnd_toStartOf="@id/imgBall"
+            app:layout_constraintTop_toTopOf="@id/imgBall"
+            app:layout_constraintBottom_toBottomOf="@id/imgBall"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="@string/results_desc"
+            app:layout_constraintStart_toEndOf="@id/imgBall"
+            app:layout_constraintTop_toTopOf="@id/imgBall"
+            app:layout_constraintBottom_toBottomOf="@id/imgBall"
+            android:layout_marginStart="16dp"/>
+
+
+        <TextView
+            android:id="@+id/tvVisitorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_visitor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guidelineCenter"/>
+
+        <Button
+            android:id="@+id/btnVisitorMinus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorLabel"
+            app:layout_constraintStart_toStartOf="@id/tvVisitorLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvVisitorLabel"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvVisitorScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="64sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/btnVisitorMinus1"
+            app:layout_constraintStart_toStartOf="@id/tvVisitorLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvVisitorLabel"/>
+
+        <Button
+            android:id="@+id/btnVisitorPlus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorScore"
+            app:layout_constraintStart_toStartOf="@id/tvVisitorLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvVisitorLabel"/>
+
+        <Button
+            android:id="@+id/btnVisitorPlus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_two"
+            app:layout_constraintTop_toBottomOf="@id/btnVisitorPlus1"
+            app:layout_constraintStart_toStartOf="@id/tvVisitorLabel"
+            app:layout_constraintEnd_toEndOf="@id/tvVisitorLabel"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

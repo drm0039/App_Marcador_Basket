@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Marcador de Basket</string>
+    <string name="label_local">Local</string>
+    <string name="label_visitor">Visitante</string>
+    <string name="label_vs">Local - Visitante</string>
+    <string name="plus_one">+1</string>
+    <string name="plus_two">+2</string>
+    <string name="minus_one">-1</string>
+    <string name="reset_desc">Resetear marcador</string>
+    <string name="results_desc">Ver resultados</string>
+    <string name="result_draw">Fue un empate</string>
+    <string name="result_win">Ganó el equipo %s</string>
+</resources>
